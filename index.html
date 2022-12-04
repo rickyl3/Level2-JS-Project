@@ -1,0 +1,50 @@
+<!--
+    Ricky Leung
+    Web Development
+    Period 7/8 Odd
+    Level 2 Match Game
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initialize();">
+    <h1>JS Level 2 Project - Match Game</h1>
+    <h2>Instructions:</h2>
+    <p>
+        Using your memory, try to match every image. Click on each image to reveal them but you can only reveal two at a time. If the two images that are revealed are not 
+        the same image, their images will return back to a question mark after 1 second. If the two images are the same image, they will stay revealed since you were 
+        able to match them. Try to match every image in the shortest amount of clicks as you can! Your score will be recorded for you below the grid.
+    </p>
+
+    <div id="grid">
+        <img src="Images/picture9.PNG" id="image1" onclick="selectCard(0);">
+        <img src="Images/picture9.PNG" id="image2" onclick="selectCard(1);">
+        <img src="Images/picture9.PNG" id="image3" onclick="selectCard(2);">
+        <img src="Images/picture9.PNG" id="image4" onclick="selectCard(3);">
+        <img src="Images/picture9.PNG" id="image5" onclick="selectCard(4);">
+        <img src="Images/picture9.PNG" id="image6" onclick="selectCard(5);">
+        <img src="Images/picture9.PNG" id="image7" onclick="selectCard(6);">
+        <img src="Images/picture9.PNG" id="image8" onclick="selectCard(7);">
+        <img src="Images/picture9.PNG" id="image9" onclick="selectCard(8);">
+        <img src="Images/picture9.PNG" id="image10" onclick="selectCard(9);">
+        <img src="Images/picture9.PNG" id="image11" onclick="selectCard(10);">
+        <img src="Images/picture9.PNG" id="image12" onclick="selectCard(11);">
+        <img src="Images/picture9.PNG" id="image13" onclick="selectCard(12);">
+        <img src="Images/picture9.PNG" id="image14" onclick="selectCard(13);">
+        <img src="Images/picture9.PNG" id="image15" onclick="selectCard(14);">
+        <img src="Images/picture9.PNG" id="image16" onclick="selectCard(15);">
+    </div>
+
+    <h2 id="score">Score: 0</h2>
+    <button onclick="resetScore();">Reset</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
