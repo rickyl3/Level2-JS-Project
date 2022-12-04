@@ -35,6 +35,14 @@ function initialize() {
 function resetScore() {
     score = 0;
 
+    foundImages.length = 0;
+    for (let i = 0; i < 16; i++) {
+        let value2 = "selectCard(" + i + ");";
+        if (!foundImages.includes(i)) {
+            imageElements[i].setAttribute("onclick", value2);
+        }
+    }
+
     for (let i = 0; i < 16; i++) {
         imageElements[i].src="Images/picture9.PNG";
     }
